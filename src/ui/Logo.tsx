@@ -4,14 +4,13 @@ const Logo = () => {
   const navigate = useNavigate();
   return (
     <span
-      role="button"
-      className="block w-[7rem] h-[1.5rem]"
       onClick={() => navigate("/")}
+      role="button"
+      className="flex justify-center items-center pb-[.3rem]"
     >
-      {/* test logo */}
       <img
         src="https://learnova.app/_next/image?url=%2Fimages%2Flogo%2Flogo_type_light.png&w=256&q=75"
-        className=" transition-all duration-150 hover:scale-105 cursor-pointer w-full h-full"
+        className=" transition-all duration-150 hover:scale-105 cursor-pointer w-[108px] h-[28px]"
         alt="Bordino__Logo"
       />
     </span>
