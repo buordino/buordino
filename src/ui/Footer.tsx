@@ -14,7 +14,7 @@ const Footer = () => {
           />
           <FooterAppsLinks />
         </div>
-        <img src="" alt="Footer-Logo" className="w-[6rem] h-[6rem]" />
+        <img src="test" alt="Footer-Logo" className="w-[6rem] h-[6rem]" />
       </div>
       <FooterBottomPart />
     </footer>
