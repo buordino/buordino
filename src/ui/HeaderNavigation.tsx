@@ -4,7 +4,7 @@ interface HeaderNavigationItemType {
   text: string;
   to: string;
 }
-const headerNavigationItems: HeaderNavigationItemType[] = [
+export const headerNavigationItems: HeaderNavigationItemType[] = [
   { text: "خانه", to: "/" },
   { text: "امکانات اپلیکیشن", to: "/" },
   { text: "تماس با ما", to: "/" },
@@ -15,8 +15,8 @@ const HeaderNavigation = () => {
   return (
     <ul className="text-white flex items-start gap-5">
       {headerNavigationItems.map((item, index) => (
-        <li className="  hover:underline hover:underline-offset-6">
-          <Link to={item.to} key={index}>
+        <li key={index} className="hover:underline hover:underline-offset-6">
+          <Link to={item.to}>
             <span>{item.text}</span>
           </Link>
         </li>
