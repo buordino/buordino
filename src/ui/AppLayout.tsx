@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const AppLayout = () => {
   return (
-    <>
+    <div className="grid grid-rows-[auto,1fr,auto]">
       <Header />
       <main>
         <div>
@@ -12,7 +12,7 @@ const AppLayout = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

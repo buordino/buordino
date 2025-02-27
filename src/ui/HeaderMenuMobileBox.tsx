@@ -48,11 +48,10 @@ const HeaderMenuMobileBox = ({
                 />
               </div>
 
-              {/* لیست آیتم‌های منو */}
               <div className="mt-6 grow">
                 <ul className="space-y-[2rem]">
                   {headerNavigationItems.map((item, index) => (
-                    <li key={index}>
+                    <li key={index} className="transition-all duration-150 hover:opacity-70">
                       <Link to={item.to}>
                         <span className="text-[1rem] text-white">
                           {item.text}
