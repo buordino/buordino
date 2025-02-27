@@ -15,8 +15,8 @@ const HeaderMenuMobileBox = ({
 }: HeaderMenuMobileBoxPropsType) => {
   return (
     <>
-      {isVisible && (
         <AnimatePresence>
+      {isVisible && (
           <div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -68,8 +68,8 @@ const HeaderMenuMobileBox = ({
               </div>
             </motion.div>
           </div>
-        </AnimatePresence>
       )}
+      </AnimatePresence>
     </>
   );
 };

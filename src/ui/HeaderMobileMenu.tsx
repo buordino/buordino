@@ -13,7 +13,7 @@ const HeaderMobileMenu = () => {
     setIsVisible(false);
     setTimeout(() => {
       setIsShow(false);
-    }, 2000);
+    }, 200);
   };
   return (
     <div>
