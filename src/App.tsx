@@ -2,7 +2,10 @@ import AppLayout from "./ui/AppLayout"
 
 const App = () => {
   return (
-    <AppLayout />
+    <div>
+      <AppLayout />
+    </div>  
+
   )
 }
 

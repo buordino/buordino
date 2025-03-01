@@ -18,7 +18,7 @@ const HeaderNavigation = () => {
         {HeaderNavigationItems.map((item, index) => (
           <li
             key={index}
-            className="transition-all duration-200 hover:text-[#FF6347]"
+            className="transition-all duration-300 hover:text-[#FF6347]"
           >
             <a href={item.href}>
               <span>{item.text}</span>
