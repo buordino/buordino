@@ -3,12 +3,12 @@ import { FaSun } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-5 px-6">
+    <header className="flex flex-col sm:flex-row items-center justify-between gap-5 py-5 px-6">
       <div>
         <span className="text-[#FF6347] font-bold text-lg">بردینو</span>
       </div>
       <HeaderNavigation />
-      <div>
+      <div className="cursor-pointer">
         <FaSun size={25} color="black" />
       </div>
     </header>
