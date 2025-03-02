@@ -41,8 +41,10 @@ const MainFeatures = () => {
         <h2 className="text-[#FF6347] font-bold text-center text-2xl sm:text-4xl mb-[3.5rem]">
           ویژگی‌ها
         </h2>
-        <ul className="w-full sm:max-w-[45rem] mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 flex-wrap">
-            {features.map((feature,index)=><FeatureItem feature={feature} key={index} />)}
+        <ul className="w-full custome-sm:max-w-[45rem] mx-auto flex flex-col custome-sm:flex-row custome-sm:items-center custome-sm:justify-between gap-6 flex-wrap">
+          {features.map((feature, index) => (
+            <FeatureItem feature={feature} key={index} />
+          ))}
         </ul>
       </div>
     </section>
