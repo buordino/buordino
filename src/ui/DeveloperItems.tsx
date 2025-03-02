@@ -12,12 +12,14 @@ const DeveloperItems = ({ developer }: DeveloperItemsPropsType) => {
     <li
       onMouseEnter={() => setIsShadow(true)}
       onMouseLeave={() => setIsShadow(false)}
-      className={`flex flex-col items-center gap-3 transition-all duration-200 `}
+      className={`flex flex-col items-center gap-3 py-6 sm:py-0  `}
     >
       <img
         src={img}
         alt={job}
-        className={`w-[5.5rem] h-[5.5rem] ${isShadow && "shadow-green-300"} `}
+        className={`w-[5.5rem] h-[5.5rem] rounded-[100%] transition-all duration-300  overflow-hidden ${
+          isShadow && "shadow-lg shadow-green-300"
+        } `}
       />
       <h3 className="text-[#FF6347] font-bold text-lg">{name}</h3>
       <p className="text-sm">{job}</p>

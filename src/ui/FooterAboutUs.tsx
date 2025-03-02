@@ -31,7 +31,7 @@ const FooterAboutUs = () => {
       <h2 className="text-[#FF6347] font-bold text-2xl sm:text-4xl text-center mb-[3.5rem]">
         درباره ما
       </h2>
-      <ul>
+      <ul className="w-full divide-y divide-stone-300 sm:divide-none sm:max-w-[35rem] mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-12">
         {developers.map((developer, index) => (
           <DeveloperItems developer={developer} key={index} />
         ))}
