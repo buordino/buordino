@@ -1,4 +1,5 @@
 import FooterAboutUs from "./FooterAboutUs";
+import FooterBottom from "./FooterBottom";
 import FooterContact from "./FooterContact";
 import FooterDownloadLinks from "./FooterDownloadLinks";
 
@@ -10,6 +11,9 @@ const Footer = () => {
           <FooterDownloadLinks />
           <FooterAboutUs />
           <FooterContact />
+        </div>
+        <div className="bg-white">
+          <FooterBottom />
         </div>
       </section>
     </footer>
