@@ -1,13 +1,17 @@
-import FooterDownloadLinks from "./FooterDownloadLinks"
+import FooterAboutUs from "./FooterAboutUs";
+import FooterDownloadLinks from "./FooterDownloadLinks";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-gray-100 py-16">
+      <section>
+        <div className="bg-gray-100 py-16">
           <FooterDownloadLinks />
-      </div>
+          <FooterAboutUs />
+        </div>
+      </section>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

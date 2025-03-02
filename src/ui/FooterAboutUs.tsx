@@ -1,0 +1,43 @@
+import DeveloperItems from "./DeveloperItems";
+
+export interface DeveloperType {
+  name: string;
+  job: string;
+  linkText: string;
+  link: string;
+  img: string;
+}
+
+const developers: DeveloperType[] = [
+  {
+    img: "./images/no-profile.png",
+    name: "جان دو",
+    job: "برنامه‌نویس بک‌اند",
+    linkText: "وب‌سایت",
+    link: "#",
+  },
+  {
+    img: "./images/no-profile.png",
+    name: "جین اسمیت",
+    job: "طراح UI/UX",
+    linkText: "پورتفولیو",
+    link: "#",
+  },
+];
+
+const FooterAboutUs = () => {
+  return (
+    <div id="about">
+      <h2 className="text-[#FF6347] font-bold text-2xl sm:text-4xl text-center mb-[3.5rem]">
+        درباره ما
+      </h2>
+      <ul>
+        {developers.map((developer, index) => (
+          <DeveloperItems developer={developer} key={index} />
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default FooterAboutUs;
