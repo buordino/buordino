@@ -27,7 +27,7 @@ const developers: DeveloperType[] = [
 
 const FooterAboutUs = () => {
   return (
-    <div id="about">
+    <div id="about" className="mb-[7.5rem]">
       <h2 className="text-[#FF6347] font-bold text-2xl sm:text-4xl text-center mb-[3.5rem]">
         درباره ما
       </h2>
