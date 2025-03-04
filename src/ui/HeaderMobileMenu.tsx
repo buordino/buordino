@@ -13,7 +13,7 @@ const HeaderMobileMenu = () => {
         setIsVisible(false)
         setTimeout(() => {
             setIsShow(false)
-        }, 50);
+        }, 500);
     }
   return <div className="sm:hidden">
     <IoMdMenu size={28} className="cursor-pointer" onClick={onOpen} />
