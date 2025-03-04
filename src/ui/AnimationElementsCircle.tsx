@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
 interface AnimationElementsPropsType {
-  type: "circle" | "squre" | "triangle";
+  type: "gift" | "question" | "coupon";
 }
 
 const AnimationElementsCircle = ({ type }: AnimationElementsPropsType) => {
-  if (type === "triangle")
+  if (type === "coupon")
     return (
       <motion.div
         className="fixed left-[15rem] top-[35rem] opacity-30
@@ -27,7 +27,7 @@ const AnimationElementsCircle = ({ type }: AnimationElementsPropsType) => {
         />
       </motion.div>
     );
-  if (type === "squre")
+  if (type === "question")
     return (
       <motion.div
         className="inline-block    fixed left-[75rem] top-[20rem] opacity-30"

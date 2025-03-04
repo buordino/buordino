@@ -6,9 +6,9 @@ import Main from "./Main";
 const AppLayout = () => {
   return (
     <>
-      <AnimationElementsCircle type="circle" />
-      <AnimationElementsCircle type="squre" />
-      <AnimationElementsCircle type="triangle" />
+      <AnimationElementsCircle type="gift" />
+      <AnimationElementsCircle type="question" />
+      <AnimationElementsCircle type="coupon" />
 
       <div className="flex flex-col  ">
         <Header />
