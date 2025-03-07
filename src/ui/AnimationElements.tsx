@@ -4,11 +4,11 @@ interface AnimationElementsPropsType {
   type: "gift" | "question" | "coupon";
 }
 
-const AnimationElementsCircle = ({ type }: AnimationElementsPropsType) => {
+const AnimationElements = ({ type }: AnimationElementsPropsType) => {
   if (type === "coupon")
     return (
       <motion.div
-        className="fixed left-[15rem] top-[35rem] opacity-30
+        className="fixed left-[5rem] sm:left-[15rem] top-[35rem] opacity-30
                 "
         animate={{
           y: [0, -20, 0],
@@ -30,7 +30,7 @@ const AnimationElementsCircle = ({ type }: AnimationElementsPropsType) => {
   if (type === "question")
     return (
       <motion.div
-        className="inline-block    fixed left-[75rem] top-[20rem] opacity-30"
+        className="inline-block    fixed left-[13rem] sm:left-[75rem] top-[15.5rem] sm:top-[20rem] opacity-30"
         animate={{
           y: [0, -20, 0],
           x: [0, -35, 0],
@@ -50,7 +50,7 @@ const AnimationElementsCircle = ({ type }: AnimationElementsPropsType) => {
     );
   return (
     <motion.div
-      className="inline-block   fixed left-[15rem] top-[10rem] opacity-40"
+      className="inline-block   fixed left-[1.5rem] sm:left-[15rem] top-[10rem] opacity-40"
       animate={{
         y: [0, +20, 0],
         x: [0, +35, 0],
@@ -66,4 +66,4 @@ const AnimationElementsCircle = ({ type }: AnimationElementsPropsType) => {
   );
 };
 
-export default AnimationElementsCircle;
+export default AnimationElements;
