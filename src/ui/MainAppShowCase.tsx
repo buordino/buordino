@@ -1,4 +1,4 @@
-import MainPhoneImage from "./MainPhoneImage";
+import MainPhone from "./MainPhone";
 
 const MainAppShowCase = () => {
   return (
@@ -7,7 +7,7 @@ const MainAppShowCase = () => {
         <h2 className="text-[#FF6347] font-bold text-center text-2xl sm:text-4xl ">
           اپلیکیشن رو کاوش کن
         </h2>
-        <MainPhoneImage />
+        <MainPhone />
       </div>
     </section>
   );
