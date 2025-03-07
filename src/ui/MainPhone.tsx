@@ -47,21 +47,32 @@ const MainPhone = () => {
           </p>
         </div>
         <div className="mt-6">
-          <MobileBoxItems key={page} item={items.at(page - 1) as MobileBoxType} />
+          <MobileBoxItems
+            key={page}
+            item={items.at(page - 1) as MobileBoxType}
+          />
         </div>
-        <div className="flex items-center justify-between mt-4">
-          <MdOutlineNavigateNext
-            size={24}
-            color="white"
-            className="cursor-pointer"
-            onClick={onNext}
-          />
-          <MdOutlineNavigateBefore
-            size={24}
-            color="white"
-            className="cursor-pointer"
-            onClick={onBefore}
-          />
+        <div
+          className={`flex items-center ${
+            page === items.length ? "justify-end" : "justify-between"
+          } mt-4`}
+        >
+          {page !== items.length && (
+            <MdOutlineNavigateNext
+              size={24}
+              color="white"
+              className="cursor-pointer"
+              onClick={onNext}
+            />
+          )}
+          {page !== 1 && (
+            <MdOutlineNavigateBefore
+              size={24}
+              color="white"
+              className="cursor-pointer"
+              onClick={onBefore}
+            />
+          )}
         </div>
       </div>
       <span className="border border-black bg-black w-20 h-2 rounded-br-xl rounded-bl-xl block mx-auto absolute top-0 left-0 right-0" />
