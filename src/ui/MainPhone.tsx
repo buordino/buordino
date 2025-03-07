@@ -47,7 +47,7 @@ const MainPhone = () => {
           </p>
         </div>
         <div className="mt-6">
-          <MobileBoxItems item={items.at(page - 1) as MobileBoxType} />
+          <MobileBoxItems key={page} item={items.at(page - 1) as MobileBoxType} />
         </div>
         <div className="flex items-center justify-between mt-4">
           <MdOutlineNavigateNext
