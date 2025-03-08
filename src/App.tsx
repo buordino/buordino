@@ -1,12 +1,14 @@
-import AppLayout from "./ui/AppLayout"
+import ContextProvider from "./context/ContextProvider";
+import AppLayout from "./ui/AppLayout";
 
 const App = () => {
   return (
-    <div>
-      <AppLayout />
-    </div>  
+    <ContextProvider>
+      <div>
+        <AppLayout />
+      </div>
+    </ContextProvider>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
