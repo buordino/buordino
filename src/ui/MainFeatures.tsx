@@ -37,7 +37,7 @@ const features: FeatureType[] = [
 const MainFeatures = () => {
   return (
     <section id="features">
-      <div className="px-4 pt-2 pb-[12rem] bg-gray-100">
+      <div className="px-4 pt-2 pb-[12rem] bg-gray-100 dark:bg-black">
         <h2 className="text-[#FF6347] font-bold text-center text-2xl sm:text-4xl mb-[3.5rem]">
           ویژگی‌ها
         </h2>

@@ -37,7 +37,7 @@ const MainPhone = () => {
   return (
     <div
       className="relative  h-[335px] w-[190px]  border-4 border-black rounded-2xl bg-gray-50 "
-      style={{ boxShadow: "5px 5px 2.5px 6px rgb(209, 218, 218)" }}
+   
     >
       <div className="absolute inset-0 bg-[#F47564] rounded-[12px] py-12 px-4 ">
         <div className="text-center text-white space-y-2">

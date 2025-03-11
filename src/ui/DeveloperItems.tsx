@@ -22,8 +22,8 @@ const DeveloperItems = ({ developer }: DeveloperItemsPropsType) => {
         } `}
       />
       <h3 className="text-[#FF6347] font-bold text-lg">{name}</h3>
-      <p className="text-sm">{job}</p>
-      <a href={link} target="_blank" className="text-sm">
+      <p className="text-sm dark:text-white">{job}</p>
+      <a href={link} target="_blank" className="text-sm dark:text-white">
         {linkText}
       </a>
     </li>

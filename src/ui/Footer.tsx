@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <footer>
       <section>
-        <div className="bg-gray-100 py-16">
+        <div className="bg-gray-100 dark:bg-black py-16 ">
           <FooterDownloadLinks />
           <FooterAboutUs />
           <FooterContact />
         </div>
-        <div className="bg-white">
+        <div className="bg-white dark:bg-gray-900">
           <FooterBottom />
         </div>
       </section>

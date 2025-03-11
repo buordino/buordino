@@ -24,10 +24,10 @@ const HeaderMenuBox = ({ isVisible, onClose }: HeaderMenuBoxPropsType) => {
             transition={{ duration: 0.4, ease: "easeInOut" }} 
             className="fixed top-0 bottom-0 right-0 flex flex-col dark:bg-gray-900 bg-white w-[15rem] z-[10001] py-8 shadow-lg"
           >
-            <div className="flex items-center justify-center pb-8 border-b border-solid border-stone-300/70 dark:border-white/15">
+            <div className="flex items-center justify-center pb-8 border-b border-solid border-stone-300/70 dark:border-white/25">
               <Logo />
             </div>
-            <ul className="flex flex-col divide-y divide-stone-300/70 dark:divide-white/15 text-sm grow dark:text-white">
+            <ul className="flex flex-col divide-y divide-stone-300/70 dark:divide-white/25 text-sm grow dark:text-white">
               <li className="py-4 px-4 transition-all duration-200 hover:text-[#FF6347]">
                 <a href="#features" onClick={onClose}>
                   ویژگی‌ها
