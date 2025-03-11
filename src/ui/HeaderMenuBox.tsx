@@ -22,7 +22,7 @@ const HeaderMenuBox = ({ isVisible, onClose }: HeaderMenuBoxPropsType) => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4, ease: "easeInOut" }} 
-            className="fixed top-0 bottom-0 right-0 flex flex-col dark:bg-gray-900 bg-white w-[15rem] z-[10001] py-8 shadow-lg"
+            className="fixed top-0 bottom-0 right-0 flex flex-col dark:bg-zinc-900 bg-white w-[15rem] z-[10001] py-8 shadow-lg"
           >
             <div className="flex items-center justify-center pb-8 border-b border-solid border-stone-300/70 dark:border-white/25">
               <Logo />
