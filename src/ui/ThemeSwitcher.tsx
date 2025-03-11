@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
   return (
     <div className="cursor-pointer">
       {isShow ? (
-        <FaSun size={25} color="black" onClick={() => setIsShow(false)} />
+        <FaSun size={25} color="white" onClick={() => setIsShow(false)} />
       ) : (
         <FaMoon size={25} color="black" onClick={() => setIsShow(true)} />
       )}

@@ -11,7 +11,7 @@ const AppLayout = () => {
       <AnimationElements type="handle" />
       <AnimationElements type="discount" />
 
-      <div className="flex flex-col  ">
+      <div className="flex flex-col">
         <Header />
         <Main />
         <Footer />
