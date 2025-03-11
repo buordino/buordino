@@ -8,7 +8,7 @@ const AnimationElements = ({ type }: AnimationElementsPropsType) => {
   if(type==='discount') 
     return (
       <motion.div
-        className="fixed  sm:right-[15rem] top-[25rem] opacity-50
+        className="fixed right-0 sm:right-[5rem]  md:right-[10rem] top-[25rem] opacity-50
                 "
         animate={{
           y: [0, -20, 0],
@@ -52,7 +52,7 @@ const AnimationElements = ({ type }: AnimationElementsPropsType) => {
   if (type === "trophy")
     return (
       <motion.div
-        className="inline-block    fixed right-[6rem] sm:right-[3rem] md:right-[12rem] top-[13.5rem] sm:top-[10rem] opacity-50"
+        className="inline-block    fixed right-0 sm:right-[3rem] md:right-[7rem] top-[8.5rem] opacity-50"
         animate={{
           y: [0, -20, 0],
           x: [0, -35, 0],
@@ -72,7 +72,7 @@ const AnimationElements = ({ type }: AnimationElementsPropsType) => {
     );
   return (
     <motion.div
-      className="inline-block   fixed left-0 sm:left-[15rem] top-[14rem] opacity-40"
+      className="inline-block   fixed left-0 sm:left-[8rem] md:left-[5rem] top-[14rem] opacity-40"
       animate={{
         y: [0, +20, 0],
         x: [0, +35, 0],
