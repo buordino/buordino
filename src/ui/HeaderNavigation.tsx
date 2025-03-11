@@ -14,7 +14,7 @@ const HeaderNavigationItems: HeaderNavigationItemsType[] = [
 const HeaderNavigation = () => {
   return (
     <nav className="hidden sm:block">
-      <ul className="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm">
+      <ul className="flex items-center gap-4 sm:gap-8 dark:text-white text-xs sm:text-sm">
         {HeaderNavigationItems.map((item, index) => (
           <li
             key={index}

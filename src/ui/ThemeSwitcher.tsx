@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const ThemeSwitcher = () => {
-  const defaultIsDark = JSON.parse(localStorage.getItem("isDark") as string) || false;
+  const defaultIsDark =
+    JSON.parse(localStorage.getItem("isDark") as string) || false;
 
   const [isShow, setIsShow] = useState(defaultIsDark);
 
-  console.log(isShow);
-
   useEffect(() => {
     localStorage.setItem("isDark", JSON.stringify(isShow));
+    document.documentElement.classList.toggle("dark")
   }, [isShow]);
 
   return (

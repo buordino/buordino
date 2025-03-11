@@ -4,3 +4,4 @@
   --breakpoint-custome-sm: 713px;
   
 }
+@custom-variant dark (&:where(.dark, .dark *));
