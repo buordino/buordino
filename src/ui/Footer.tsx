@@ -12,7 +12,7 @@ const Footer = () => {
           <FooterAboutUs />
           <FooterContact />
         </div>
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-white dark:bg-zinc-900">
           <FooterBottom />
         </div>
       </section>
