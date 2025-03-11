@@ -22,7 +22,7 @@ const HeaderMobileMenu = () => {
   };
   return (
     <div className="sm:hidden">
-      <IoMdMenu size={28} className="cursor-pointer" onClick={onOpen} />
+      <IoMdMenu size={28} className="cursor-pointer dark:text-white" onClick={onOpen} />
       {isShow && <HeaderMenuBox isVisible={isVisible} onClose={onClose} />}
     </div>
   );
