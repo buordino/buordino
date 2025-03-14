@@ -18,9 +18,9 @@ const DownloadButton = ({ href, text, size }: DownloadButtonPropsType) => {
   return (
     <a
       href={`href`}
-      className={`inline-block cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105 hover:shadow-[#FF6347] bg-[#FF6347] 
-         text-[10px]
-       text-white rounded-2xl py-2 px-4`}
+      className={`inline-block cursor-pointer transition-all duration-300  hover:shadow-lg hover:scale-105 hover:shadow-[#FF6347] bg-[#FF6347] 
+         text-[15px]
+       text-white rounded-3xl py-3 px-6 hover:px-8`}
     >
       {text}
     </a>
